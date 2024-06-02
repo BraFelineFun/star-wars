@@ -1,24 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5", // устанавливает целевую версию js, в которую должен перекомпилиться ts
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    ],  // Добавляет типы для наборов функций, указанных в массиве.
+        //По дефолту в lib будут только функции, соответствующие версии js в "target"
+
+    "allowJs": true, // допускает js - файлы в проекте
+    "skipLibCheck": true, // проверять только .d.ts файлы, на которые есть ссылка в исходном коде
+    "esModuleInterop": true, //
+    "allowSyntheticDefaultImports": true, // позволяет импортировать без "*", когда нет дефолтного экспорта
+    "strict": true, // Строгая проверка типов. Используются все правила, которые есть на https://www.typescriptlang.org/tsconfig/#strict
+    "forceConsistentCasingInFileNames": true, // на всех файловых системах проверять, что нет ошибки в регистре
+    "noFallthroughCasesInSwitch": true, // проверяет наличие break в каждом switch-case
+    "module": "esnext", // во что компилируются модули (все подключаемые файлы js) при сборке
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "resolveJsonModule": true, // Импортирование json файлов
+    "isolatedModules": true, //
+    "noEmit": true, // ts сам не создает файлы js при компиляции, чтобы дать это сделать Babel
+    "jsx": "react-jsx" //
   },
   "include": [
     "src"
