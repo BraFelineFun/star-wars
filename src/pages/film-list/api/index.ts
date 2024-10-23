@@ -1,2 +1,2 @@
-export type {Film, FilmList} from './dto/get-film-list-response'
+export type {Film} from './dto'
 export {getFilmList} from './get-film-list';

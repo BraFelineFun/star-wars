@@ -18,7 +18,8 @@
     "module": "esnext", // во что компилируются модули (все подключаемые файлы js) при сборке
     "moduleResolution": "node",
     "resolveJsonModule": true, // Импортирование json файлов
-    "isolatedModules": true, //
+    //TODO: ПОРОБОВАТЬ ВЫКЛЮЧИТЬ
+    "isolatedModules": false, //
     "noEmit": true, // ts сам не создает файлы js при компиляции, чтобы дать это сделать Babel
     "jsx": "react-jsx" //
   },

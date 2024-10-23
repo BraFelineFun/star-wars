@@ -1,6 +1,6 @@
-import { FilmList } from "./dto/get-film-list-response";
+import { Film } from "./dto";
 
-export const getFilmList = (): FilmList => {
+export const getFilmList = (): Film[] => {
   return [
     {id: 1, title: 'Белоснежка'},
     {id: 2, title: 'Семь Гномов'},
