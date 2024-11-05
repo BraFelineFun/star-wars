@@ -1,1 +1,1 @@
-export type {Film} from './get-film-list-response';
+export type { Film } from './get-film-list-response';

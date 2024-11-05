@@ -1,1 +1,1 @@
-export {useAppSelector, useAppDispatch} from './redux';
+export { useAppSelector, useAppDispatch } from './redux';

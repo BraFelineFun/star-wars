@@ -5,16 +5,18 @@ import { addFilm } from '../../../store/slices/films/film-slice';
 import { Film } from '../api';
 // import { getFilmList } from "../api";
 
-export function FilmListPage():JSX.Element {
+export function FilmListPage(): JSX.Element {
   const filmList = useAppSelector(state => state.films);
   const dispatch = useAppDispatch();
 
-
   const handleClick = () => {
-    const newFilm: Film = {id: Math.round(Math.random()* 10), title: 'NewIOInteractive'}
+    const newFilm: Film = {
+      id: Math.round(Math.random() * 10),
+      title: 'NewIOInteractive',
+    };
 
     dispatch(addFilm(newFilm));
-  }
+  };
 
   return (
     <div>
@@ -23,7 +25,7 @@ export function FilmListPage():JSX.Element {
 
         <div className="">
           <Space>
-            {filmList.map((film) => (
+            {filmList.map(film => (
               <div key={film.id}>{film.title}</div>
             ))}
           </Space>

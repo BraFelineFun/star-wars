@@ -1,2 +1,2 @@
-export type {Film} from './dto'
-export {getFilmList} from './get-film-list';
+export type { Film } from './dto';
+export { getFilmList } from './get-film-list';
